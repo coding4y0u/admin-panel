@@ -1,0 +1,8 @@
+@forward 'globals';
+@use 'globals' as *;
+
+
+.container{
+    display: flex;
+    margin-top: rem(10);
+}

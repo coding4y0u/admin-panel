@@ -1,0 +1,46 @@
+@use '../../sass/globals' as *;
+
+.sidebar{
+    flex: 1;
+    height: calc(100vh - rem(50));
+    background-color: rgb(251, 251, 255);
+    position: sticky;
+    top: 50;
+
+    .sidebarWrapper{
+        padding: rem(20);
+        color: #555;
+
+        .sidebarMenu{
+            margin-bottom: rem(10);
+
+            .sidebarTitle{
+                font-size: rem(13);
+                color: rgb(187, 186, 186);
+            }
+
+            .sidebarList{
+                list-style: none;
+                padding: rem(5);
+
+                .sidebarItem{
+                    padding: rem(5);
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    border-radius: rem(10);
+
+                    &:hover,&.active{
+                        background-color: rgb(240, 240, 255);
+
+                    }
+
+                    .sidebarIcon{
+                        margin-right: rem(5);
+                        font-size: rem(20)!important;
+                    }
+                }
+            }
+        }
+    }
+}

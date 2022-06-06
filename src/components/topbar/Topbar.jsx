@@ -21,6 +21,7 @@ export default function Topbar() {
           <div className='topbarIconContainer'>
             <Settings />
           </div>
+          <img src='/images/proxy-image.jpeg' alt='' className='topAvatar' />
         </div>
       </div>
     </div>

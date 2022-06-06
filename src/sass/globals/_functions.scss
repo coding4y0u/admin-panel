@@ -1,0 +1,16 @@
+// @use 'sass:math';
+
+// $browser-context: 16;
+
+// @function em($pixels, $context: $browser-context) {
+//   @return ($pixels / $context) * 1em;
+// }
+
+@function rem($pixel, $context: 16){
+  // @if math.is-unitless($pixel) { 
+  // }
+  @return ($pixel / $context) * 1rem;
+  // @else{
+  //     @error 'Don\'t use units when using the rem()function; only numbers'
+  // }
+}
