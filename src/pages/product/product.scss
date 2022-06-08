@@ -1,0 +1,128 @@
+@use '../../sass/style.scss' as *;
+
+.product{
+    flex: 4;
+    padding: rem(20);
+
+    .productTitleContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .productAddButton{
+            width: rem(80);
+            border: none;
+            padding: rem(5);
+            background-color: teal;
+            color: white;
+            border-radius: rem(5);
+            font-size: rem(16);
+            cursor: pointer;
+        }
+    }
+
+    .productTop{
+        display: flex;
+
+        .productTopLeft,.productTopRight{
+           flex: 1; 
+        }
+
+        .productTopRight{
+            padding: rem(20);
+            margin: rem(20);
+            --webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+
+            .productInfoTop{
+                display: flex;
+                align-items: center;
+
+                .productInfoImg{
+                    width: rem(40);
+                    height: rem(40);
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: rem(20);
+                }
+
+                .productName{
+                    font-weight: 600;
+                }
+            }
+
+            .productInfoBottom{
+                margin-top: rem(10);
+
+                .productInfoItem{
+                    width: rem(150);
+                    display: flex;
+                    justify-content: space-between;
+
+                    .productInfoValue{
+                       font-weight: 300; 
+                    }
+                }
+            }
+        }
+    }
+    .productBottom{
+        padding: rem(20);
+        margin: rem(20);
+        --webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+
+        .productForm{
+            display: flex;
+            justify-content: space-between;
+
+            .productFormLeft{
+                display: flex;
+                flex-direction: column;
+
+                &>label{
+                   margin-bottom: rem(10);
+                   color: grey; 
+                }
+                &>input{
+                    margin-bottom: rem(10);
+                    border: none;
+                    padding: rem(5);
+                    border-bottom: rem(1) solid grey;
+                }
+
+                &>select{
+                    margin-bottom: rem(10);
+                }
+            }
+
+            .productFormRight{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .productUpload{
+                    display: flex;
+                    align-items: center;
+
+                    .productUploadImg{
+                        width: rem(100);
+                        height: rem(100);
+                        border-radius: rem(10);
+                        object-fit: cover;
+                        margin-right: rem(20);
+                    }
+                }
+                .productButton{
+                  border: none;
+                  padding: rem(5);
+                  border-radius: rem(5);
+                  background-color: darkblue;  
+                  color: white;
+                  font-weight: 600;
+                  cursor: pointer;
+                }
+            }
+        }
+    }
+}

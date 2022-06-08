@@ -1,0 +1,33 @@
+@use '../../sass/style.scss' as *;
+
+.userList{
+    flex: 4;
+}
+
+.userListUser{
+    display: flex;
+    align-items: center;
+
+    .userListImg{
+        width: rem(32);
+        height: rem(32);
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: rem(10);
+    }
+}
+
+.userListEdit{
+    border: none;
+    border-radius: rem(10);
+    padding: rem(5) rem(10);
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: rem(20);
+}
+
+.userListDelete{
+    color: red;
+    cursor: pointer;
+}

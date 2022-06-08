@@ -13,6 +13,7 @@ import {
   BarChart,
 } from "@mui/icons-material";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./sidebar.scss";
 
 export default function Sidebar() {
@@ -22,10 +23,12 @@ export default function Sidebar() {
         <div className='sidebarMenu'>
           <h3 className='sidebarTitle'>Dashboard</h3>
           <ul className='sidebarList'>
-            <li className='sidebarItem active'>
-              <LineStyle className='sidebarIcon' />
-              Home
-            </li>
+            <Link to='/' className='link'>
+              <li className='sidebarItem active'>
+                <LineStyle className='sidebarIcon' />
+                Home
+              </li>
+            </Link>
             <li className='sidebarItem'>
               <Timeline className='sidebarIcon' />
               Analytics
@@ -39,14 +42,18 @@ export default function Sidebar() {
         <div className='sidebarMenu'>
           <h3 className='sidebarTitle'>Quick Menu</h3>
           <ul className='sidebarList'>
-            <li className='sidebarItem active'>
-              <PermIdentity className='sidebarIcon' />
-              Users
-            </li>
-            <li className='sidebarItem'>
-              <Storefront className='siedbarIcon' />
-              Products
-            </li>
+            <Link to='/users' className='link'>
+              <li className='sidebarItem active'>
+                <PermIdentity className='sidebarIcon' />
+                Users
+              </li>
+            </Link>
+            <Link to='/products' className='link'>
+              <li className='sidebarItem'>
+                <Storefront className='siedbarIcon' />
+                Products
+              </li>
+            </Link>
             <li className='sidebarItem'>
               <AttachMoney className='sidebarIcon' />
               Transactions

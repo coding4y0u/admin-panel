@@ -5,7 +5,7 @@
     height: calc(100vh - rem(50));
     background-color: rgb(251, 251, 255);
     position: sticky;
-    top: 50;
+    top: rem(50);
 
     .sidebarWrapper{
         padding: rem(20);
@@ -17,6 +17,7 @@
             .sidebarTitle{
                 font-size: rem(13);
                 color: rgb(187, 186, 186);
+                margin-bottom: rem(20);
             }
 
             .sidebarList{
@@ -29,6 +30,7 @@
                     display: flex;
                     align-items: center;
                     border-radius: rem(10);
+                    margin-bottom: rem(20);
 
                     &:hover,&.active{
                         background-color: rgb(240, 240, 255);
